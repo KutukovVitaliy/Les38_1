@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
             tabs.setTabText(tabs.currentIndex(), title);
             tabs.setWindowTitle(title);
         });
-        tabs.addTab(newTab, "Tab " + QString::number(tabs.count() + 1));
+        tabs.addTab(newTab, "tab " + QString::number(tabs.count() + 1));
     });
     QObject::connect(&tabs, &QTabWidget::tabCloseRequested,[&tabs](int index)
     {
